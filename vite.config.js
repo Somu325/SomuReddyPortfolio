@@ -13,6 +13,10 @@ export default defineConfig({
         manualChunks: {
           "react-vendor": ["react", "react-dom"],
         },
+        // Optimize chunk file names
+        chunkFileNames: "assets/[name]-[hash].js",
+        entryFileNames: "assets/[name]-[hash].js",
+        assetFileNames: "assets/[name]-[hash].[ext]",
       },
     },
     // Optimize chunk size
@@ -23,9 +27,20 @@ export default defineConfig({
     sourcemap: false,
     // Target modern browsers for smaller output
     target: "es2015",
+    // Optimize assets
+    assetsInlineLimit: 4096, // Inline assets smaller than 4kb
+    // Enable minification
+    cssMinify: true,
+    // Optimize dependencies
+    reportCompressedSize: false, // Faster builds
   },
   // Optimize dependencies
   optimizeDeps: {
     include: ["react", "react-dom"],
+  },
+  // Performance optimizations
+  esbuild: {
+    drop: ["console", "debugger"], // Remove console.log in production
+    legalComments: "none",
   },
 });
