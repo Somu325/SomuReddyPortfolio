@@ -254,16 +254,18 @@ const Contact = () => {
         }
 
         .section-title {
-          font-size: 48px;
-          font-weight: 800;
+          font-size: 24px;
+          font-weight: 400;
           margin-bottom: var(--spacing-md);
+          text-shadow: 0 0 20px rgba(0, 255, 65, 0.5);
         }
 
         .highlight {
-          background: linear-gradient(135deg, #ffffff 0%, #cccccc 100%);
+          background: linear-gradient(135deg, #00ff41 0%, #00cc33 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
+          filter: drop-shadow(0 0 15px rgba(0, 255, 65, 0.6));
         }
 
         .section-subtitle {
@@ -288,9 +290,11 @@ const Contact = () => {
 
         .form-title,
         .info-title {
-          font-size: 24px;
-          font-weight: 700;
+          font-size: 16px;
+          font-weight: 400;
           margin-bottom: var(--spacing-lg);
+          font-family: var(--font-heading);
+          text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
         }
 
         .contact-form {
@@ -306,20 +310,22 @@ const Contact = () => {
         }
 
         .form-group label {
-          font-size: 14px;
-          font-weight: 600;
+          font-size: 12px;
+          font-weight: 400;
           color: var(--text-secondary);
+          font-family: var(--font-heading);
+          text-shadow: 0 0 5px rgba(0, 255, 65, 0.3);
         }
 
         .form-group input,
         .form-group textarea {
           padding: 14px 18px;
-          background: rgba(255, 255, 255, 0.05);
-          border: 2px solid var(--border-glass);
-          border-radius: 8px;
-          color: var(--text-primary);
-          font-family: 'Inter', sans-serif;
-          font-size: 15px;
+          background: rgba(0, 10, 0, 0.6);
+          border: 2px solid rgba(0, 255, 65, 0.2);
+          border-radius: 2px;
+          color: var(--accent-primary);
+          font-family: var(--font-body);
+          font-size: 18px;
           transition: all 0.3s ease;
         }
 
@@ -327,7 +333,13 @@ const Contact = () => {
         .form-group textarea:focus {
           outline: none;
           border-color: var(--accent-primary);
-          background: rgba(255, 255, 255, 0.08);
+          background: rgba(0, 20, 0, 0.8);
+          box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+          color: var(--text-muted);
         }
 
         .form-group textarea {
@@ -375,21 +387,23 @@ const Contact = () => {
         }
 
         .info-icon-box {
-          width: 56px;
-          height: 56px;
+          width: 50px;
+          height: 50px;
           display: flex;
           align-items: center;
           justify-content: center;
-          background: rgba(255, 255, 255, 0.05);
-          border: 2px solid var(--border-glass);
-          border-radius: 12px;
+          background: rgba(0, 255, 65, 0.1);
+          border: 2px solid rgba(0, 255, 65, 0.3);
+          border-radius: 2px;
           flex-shrink: 0;
+          box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
         }
 
         .info-icon {
-          font-size: 24px;
-          font-weight: 800;
+          font-size: 18px;
+          font-weight: 400;
           color: var(--accent-primary);
+          text-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
         }
 
         .info-content {
@@ -479,7 +493,8 @@ const Contact = () => {
 
         .footer {
           padding: var(--spacing-2xl) 0;
-          border-top: 1px solid var(--border-glass);
+          border-top: 1px solid rgba(0, 255, 65, 0.2);
+          box-shadow: 0 -5px 30px rgba(0, 255, 65, 0.05);
         }
 
         .footer-content {

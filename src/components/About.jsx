@@ -178,30 +178,35 @@ const About = () => {
         }
 
         .section-title {
-          font-size: 48px;
-          font-weight: 800;
+          font-size: 24px;
+          font-weight: 400;
           margin-bottom: var(--spacing-md);
+          text-shadow: 0 0 20px rgba(0, 255, 65, 0.5);
         }
 
         .highlight {
-          background: linear-gradient(135deg, #ffffff 0%, #cccccc 100%);
+          background: linear-gradient(135deg, #00ff41 0%, #00cc33 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
+          filter: drop-shadow(0 0 15px rgba(0, 255, 65, 0.6));
         }
 
         .section-subtitle {
-          font-size: 18px;
+          font-size: 20px;
           color: var(--text-secondary);
           max-width: 600px;
           margin: 0 auto;
+          font-family: var(--font-body);
         }
 
         .section-subtitle-small {
-          font-size: 24px;
-          font-weight: 700;
+          font-size: 16px;
+          font-weight: 400;
           margin-bottom: var(--spacing-lg);
           color: var(--text-primary);
+          font-family: var(--font-heading);
+          text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
         }
 
         .about-grid {
@@ -216,15 +221,18 @@ const About = () => {
         }
 
         .card-title {
-          font-size: 24px;
-          font-weight: 700;
+          font-size: 16px;
+          font-weight: 400;
           margin-bottom: var(--spacing-md);
+          font-family: var(--font-heading);
+          text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
         }
 
         .card-text {
-          font-size: 16px;
+          font-size: 18px;
           line-height: 1.8;
           color: var(--text-secondary);
+          font-family: var(--font-body);
         }
 
         .experience-card,
@@ -242,24 +250,29 @@ const About = () => {
         }
 
         .exp-role {
-          font-size: 20px;
-          font-weight: 700;
+          font-size: 14px;
+          font-weight: 400;
           color: var(--accent-primary);
           margin-bottom: 4px;
+          font-family: var(--font-heading);
+          text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
         }
 
         .exp-company {
-          font-size: 16px;
+          font-size: 18px;
           color: var(--text-secondary);
+          font-family: var(--font-body);
         }
 
         .exp-period {
-          font-size: 14px;
-          color: var(--text-muted);
+          font-size: 12px;
+          color: var(--accent-primary);
           padding: 6px 12px;
-          background: rgba(255, 255, 255, 0.05);
-          border-radius: 6px;
+          background: rgba(0, 255, 65, 0.1);
+          border-radius: 2px;
           white-space: nowrap;
+          border: 1px solid rgba(0, 255, 65, 0.3);
+          font-family: var(--font-heading);
         }
 
         .exp-responsibilities {
@@ -347,18 +360,19 @@ const About = () => {
         }
 
         .skill-bar {
-          height: 8px;
-          background: rgba(255, 255, 255, 0.05);
-          border-radius: 4px;
+          height: 6px;
+          background: rgba(0, 255, 65, 0.1);
+          border-radius: 0;
           overflow: hidden;
+          border: 1px solid rgba(0, 255, 65, 0.2);
         }
 
         .skill-progress {
           height: 100%;
           background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
-          border-radius: 4px;
+          border-radius: 0;
           transition: width 1s ease-out;
-          box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 0 15px rgba(0, 255, 65, 0.5);
         }
 
         .achievements-list {

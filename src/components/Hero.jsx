@@ -208,38 +208,43 @@ const Hero = () => {
         }
 
         .hero-title {
-          font-size: 64px;
-          font-weight: 800;
+          font-size: 32px;
+          font-weight: 400;
           margin-bottom: var(--spacing-md);
-          line-height: 1.1;
+          line-height: 1.4;
+          text-shadow: 0 0 20px rgba(0, 255, 65, 0.5), 0 0 40px rgba(0, 255, 65, 0.3);
         }
 
         .hero-name {
           display: block;
-          background: linear-gradient(135deg, #ffffff 0%, #cccccc 100%);
+          background: linear-gradient(135deg, #00ff41 0%, #00cc33 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
+          filter: drop-shadow(0 0 15px rgba(0, 255, 65, 0.6));
         }
 
         .hero-subtitle {
-          font-size: 32px;
-          font-weight: 600;
+          font-size: 24px;
+          font-weight: 400;
           color: var(--text-secondary);
           margin-bottom: var(--spacing-lg);
           min-height: 48px;
           display: flex;
           align-items: center;
           gap: 4px;
+          font-family: var(--font-body);
         }
 
         .typing-text {
           color: var(--accent-primary);
+          text-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
         }
 
         .cursor {
           color: var(--accent-primary);
           animation: blink 1s step-end infinite;
+          text-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
         }
 
         @keyframes blink {
@@ -248,12 +253,14 @@ const Hero = () => {
         }
 
         .hero-description {
-          font-size: 18px;
+          font-size: 20px;
           line-height: 1.8;
-          color: #d4d4d4;
+          color: var(--text-secondary);
           margin-bottom: var(--spacing-xl);
           max-width: 600px;
-          font-weight: 600;
+          font-weight: 400;
+          font-family: var(--font-body);
+          text-shadow: 0 0 5px rgba(0, 255, 65, 0.3);
         }
 
         .hero-tech-stack {
@@ -301,21 +308,26 @@ const Hero = () => {
         }
 
         .stat-value {
-          font-size: 36px;
-          font-weight: 800;
+          font-size: 28px;
+          font-weight: 400;
           margin-bottom: 4px;
           color: var(--accent-primary);
+          font-family: var(--font-heading);
+          text-shadow: 0 0 15px rgba(0, 255, 65, 0.6);
         }
 
         .stat-label {
-          font-size: 14px;
+          font-size: 16px;
           color: var(--text-muted);
+          font-family: var(--font-body);
         }
 
         .stat-divider {
           width: 1px;
           height: 40px;
-          background: var(--border-glass);
+          background: var(--accent-primary);
+          opacity: 0.3;
+          box-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
         }
 
         .code-window {
@@ -345,14 +357,16 @@ const Hero = () => {
         }
 
         .window-title {
-          font-family: 'JetBrains Mono', monospace;
-          font-size: 13px;
-          color: var(--text-muted);
+          font-family: var(--font-heading);
+          font-size: 10px;
+          color: var(--accent-primary);
+          text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
         }
 
         .code-line {
           margin-bottom: 4px;
-          font-size: 14px;
+          font-size: 11px;
+          font-family: var(--font-heading);
         }
 
         .code-indent {
@@ -364,23 +378,25 @@ const Hero = () => {
         }
 
         .code-keyword {
-          color: #ffffff;
+          color: #00ff41;
+          text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
         }
 
         .code-variable {
-          color: #e5e5e5;
+          color: #00dd33;
         }
 
         .code-property {
-          color: #cccccc;
+          color: #00cc33;
         }
 
         .code-string {
-          color: #b3b3b3;
+          color: #00aa33;
         }
 
         .code-boolean {
-          color: #ffffff;
+          color: #00ff41;
+          text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
         }
 
         @media (max-width: 1024px) {
@@ -390,21 +406,21 @@ const Hero = () => {
           }
 
           .hero-title {
-            font-size: 48px;
+            font-size: 24px;
           }
 
           .hero-subtitle {
-            font-size: 24px;
+            font-size: 20px;
           }
         }
 
         @media (max-width: 768px) {
           .hero-title {
-            font-size: 36px;
+            font-size: 20px;
           }
 
           .hero-subtitle {
-            font-size: 20px;
+            font-size: 18px;
           }
 
           .hero-stats {

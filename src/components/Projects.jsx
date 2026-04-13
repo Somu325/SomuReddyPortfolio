@@ -103,16 +103,18 @@ const Projects = () => {
         }
 
         .section-title {
-          font-size: 48px;
-          font-weight: 800;
+          font-size: 24px;
+          font-weight: 400;
           margin-bottom: var(--spacing-md);
+          text-shadow: 0 0 20px rgba(0, 255, 65, 0.5);
         }
 
         .highlight {
-          background: linear-gradient(135deg, #ffffff 0%, #cccccc 100%);
+          background: linear-gradient(135deg, #00ff41 0%, #00cc33 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
+          filter: drop-shadow(0 0 15px rgba(0, 255, 65, 0.6));
         }
 
         .section-subtitle {
@@ -131,26 +133,30 @@ const Projects = () => {
         }
 
         .filter-tab {
-          padding: 12px 28px;
+          padding: 10px 24px;
           background: transparent;
           border: 2px solid var(--border-glass);
-          border-radius: 50px;
+          border-radius: 2px;
           color: var(--text-secondary);
-          font-weight: 600;
-          font-size: 15px;
+          font-weight: 400;
+          font-size: 11px;
           cursor: pointer;
           transition: all 0.3s ease;
+          font-family: var(--font-heading);
+          text-shadow: 0 0 5px rgba(0, 255, 65, 0.3);
         }
 
         .filter-tab:hover {
           border-color: var(--accent-primary);
           color: var(--accent-primary);
+          box-shadow: 0 0 15px rgba(0, 255, 65, 0.3);
         }
 
         .filter-tab.active {
           background: var(--accent-primary);
           border-color: var(--accent-primary);
           color: var(--bg-primary);
+          box-shadow: 0 0 20px rgba(0, 255, 65, 0.5);
         }
 
         .projects-grid {
@@ -175,20 +181,23 @@ const Projects = () => {
         }
 
         .project-icon-box {
-          width: 80px;
-          height: 80px;
+          width: 70px;
+          height: 70px;
           display: flex;
           align-items: center;
           justify-content: center;
-          background: rgba(255, 255, 255, 0.05);
-          border: 2px solid var(--border-glass);
-          border-radius: 12px;
+          background: rgba(0, 255, 65, 0.1);
+          border: 2px solid rgba(0, 255, 65, 0.3);
+          border-radius: 2px;
+          box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
         }
 
         .project-icon {
-          font-size: 24px;
-          font-weight: 800;
+          font-size: 14px;
+          font-weight: 400;
           color: var(--accent-primary);
+          font-family: var(--font-heading);
+          text-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
         }
 
         .project-meta {
@@ -210,18 +219,21 @@ const Projects = () => {
         }
 
         .project-title {
-          font-size: 24px;
-          font-weight: 700;
+          font-size: 16px;
+          font-weight: 400;
           margin-bottom: var(--spacing-sm);
           color: var(--text-primary);
+          font-family: var(--font-heading);
+          text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
         }
 
         .project-description {
-          font-size: 15px;
+          font-size: 18px;
           line-height: 1.7;
           color: var(--text-secondary);
           margin-bottom: var(--spacing-md);
           flex: 1;
+          font-family: var(--font-body);
         }
 
         .project-features {

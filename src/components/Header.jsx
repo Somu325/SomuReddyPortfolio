@@ -116,11 +116,11 @@ const Header = () => {
         }
 
         .header.scrolled {
-          background: rgba(0, 0, 0, 0.95);
+          background: rgba(0, 5, 0, 0.95);
           backdrop-filter: blur(20px);
-          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          border-bottom: 1px solid rgba(0, 255, 65, 0.2);
           padding: 1rem 0;
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 255, 65, 0.1);
         }
 
         .header-content {
@@ -155,13 +155,14 @@ const Header = () => {
         }
 
         .nav-link {
-          font-family: var(--font-body);
+          font-family: var(--font-heading);
           color: var(--text-secondary);
-          font-weight: 600;
-          font-size: 15px;
+          font-weight: 400;
+          font-size: 11px;
           transition: all 0.3s ease;
           position: relative;
-          letter-spacing: 0.5px;
+          letter-spacing: 1px;
+          text-shadow: 0 0 5px rgba(0, 255, 65, 0.3);
         }
 
         .nav-link::after {
@@ -173,10 +174,12 @@ const Header = () => {
           height: 2px;
           background: var(--accent-primary);
           transition: width 0.3s ease;
+          box-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
         }
 
         .nav-link:hover {
-          color: var(--text-primary);
+          color: var(--accent-primary);
+          text-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
         }
 
         .nav-link:hover::after {
@@ -224,7 +227,7 @@ const Header = () => {
           transform: rotate(-45deg) translate(7px, -7px);
         }
 
-        /* Mobile Menu */
+        /* Matrix Mobile Menu */
         .mobile-menu {
           position: fixed;
           top: 0;
@@ -232,11 +235,12 @@ const Header = () => {
           width: 100%;
           max-width: 400px;
           height: 100vh;
-          background: rgba(0, 0, 0, 0.98);
+          background: rgba(0, 5, 0, 0.98);
           backdrop-filter: blur(20px);
           transition: right 0.3s ease;
           z-index: 999;
           padding-top: 80px;
+          border-left: 1px solid rgba(0, 255, 65, 0.2);
         }
 
         .mobile-menu-close {
@@ -245,9 +249,9 @@ const Header = () => {
           right: 20px;
           width: 44px;
           height: 44px;
-          background: rgba(255, 255, 255, 0.1);
-          border: 2px solid rgba(255, 255, 255, 0.2);
-          border-radius: 8px;
+          background: rgba(0, 255, 65, 0.1);
+          border: 2px solid rgba(0, 255, 65, 0.3);
+          border-radius: 2px;
           color: var(--accent-primary);
           font-size: 28px;
           font-weight: 300;
@@ -256,17 +260,19 @@ const Header = () => {
           display: flex;
           align-items: center;
           justify-content: center;
+          text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
         }
 
         .mobile-menu-close:hover {
           background: var(--accent-primary);
           color: var(--bg-primary);
           transform: rotate(90deg);
+          box-shadow: 0 0 20px rgba(0, 255, 65, 0.5);
         }
 
         .mobile-menu.open {
           right: 0;
-          box-shadow: -10px 0 50px rgba(0, 0, 0, 0.5);
+          box-shadow: -10px 0 50px rgba(0, 0, 0, 0.5), -5px 0 30px rgba(0, 255, 65, 0.1);
         }
 
         .mobile-nav {
@@ -278,17 +284,19 @@ const Header = () => {
 
         .mobile-nav-link {
           font-family: var(--font-heading);
-          font-size: 24px;
-          font-weight: 700;
+          font-size: 14px;
+          font-weight: 400;
           color: var(--text-primary);
           padding: var(--spacing-md) 0;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          border-bottom: 1px solid rgba(0, 255, 65, 0.15);
           transition: all 0.3s ease;
+          text-shadow: 0 0 5px rgba(0, 255, 65, 0.3);
         }
 
         .mobile-nav-link:hover {
           padding-left: var(--spacing-sm);
           color: var(--accent-primary);
+          text-shadow: 0 0 15px rgba(0, 255, 65, 0.8);
         }
 
         .mobile-cta {
